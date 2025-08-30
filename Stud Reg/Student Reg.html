@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<style>
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, blueviolet, #6a3093);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: blueviolet;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th {
+            background-color: blueviolet;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        h1 {
+            color: rgb(48, 193, 5);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px; 
+        }
+</style>
+
+
+<body>
+    <section>
+        <h1>Student Registration Portal</h1>
+        <p>
+             Review the available courses in the table bleow. Fill ou the following input.
+        </p>
+        <h2>Available courses </h2>
+        <table border="1" width="100%">
+            <caption>
+                Computer Science Department Courses | A.Y. 2025 - 2026 |
+            </caption>
+            <tr>
+                <th rowspan="2">Course Code</th>
+                <th rowspan="2">Course Name</th>
+                <th colspan="2">Schedule</th>
+            </tr>
+
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>CS101</td>
+                <td>Intro to Programming</td>
+                <td>Mon to Tuesday</td>
+                <td>1:00 PM to 5:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>DSA02</td>
+                <td>Data Structure and Algorithms</td>
+                <td>Wed & Friday</td>
+                <td>10:00 AM to 12NN</td>
+            </tr>
+
+            <tr>
+                <td>WEBDeV01</td>
+                <td>Responsive Web Development</td>
+                <td>Sat Only</td>
+                <td>8:00 AM to 10:00 AM</td>
+            </tr>
+        </table>
+    </section>
+
+    <form action="/submitted.html" method="post">
+        <fieldset>
+            <legend>
+                <h2>Registration Form</h2>
+            </legend>
+
+            <label for="name"> Full Name</label>
+            <input type="text" name="name" placeholder="L name, F name, M name">
+            <br>
+        
+            <label for="Email">Email Address:</label>
+            <input type="email" name="email" placeholder="Enter your Email Add" >
+        
+             <!--Radio type-->
+            <p>Year level:</p>
+            <input type="radio" name="year" id="first" value="first Year">
+            <label for="first">1st Year</label><br />
+            <input type="radio" name="year" id="second" value="2nd Year">
+            <label for="second">2nd Year</label><br />
+             <input type="radio" name="year" id="third" value="3rd Year">
+            <label for="third">3rd Year</label><br />
+             <input type="radio" name="year" id="fourth" value="4th Year">
+            <label for="fourth">4th Year</label><br />
+
+            <!--Check box-->
+            <p>Prefered study Mode:(bahala ka sa buhay mo XD )</p>
+            <input type="checkbox" id="online" name="mode" value="1st Year">
+            <label for="online">Online</label> <br />
+            <input type="checkbox" id="onsite" name="mode" value="1st Year">
+            <label for="onsite">Onsite</label> <br />
+
+             <!--Drop Down-->
+            <label for="course">Select Course:</label>
+            <select name="course" id="course">
+                <option value="">--Choose a Course--</option>
+                <option value="CS101">Intro to Programming</option>
+                <option value="DSA02">Data Structure and Algorithms</option>
+                <option value="WEBDeV01">Responsive Web Development</option>
+            </select>
+
+            <br>
+            <!--Text Area-->
+
+            <label for="comments">Additional Feedback:</label>
+            <br>
+            <textarea 
+            name="" 
+            id=""
+            rows="4"
+            cols="40"
+            placeholder="Enter anything to say or feedback."
+            ></textarea>
+            
+            <br><br>
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+</body>
+
+<footer>
+    &copy; La verdad Christian College. All rights resevered. 
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWUxNXEzd3hiMHV1ZmhpeTMxbHVkemZldnN3b2I2eDdudmI4aWJtMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QXUmgnT6cE347pPXdh/giphy.gif" alt="fb image" class="footer-gif">
+</footer>
+</html>
